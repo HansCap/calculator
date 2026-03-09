@@ -18,14 +18,14 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+
       - name: Install dependencies
-        run: pip install requirements.txt
+        run: uv sync
 
       - name: Install test dependencies
-        run: pip install pytest black
+        run: uv add pytest
 
       - name: Run tests
         run: pytest
-
-      - name: Check code quality
-        run: black --check

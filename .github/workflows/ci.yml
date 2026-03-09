@@ -22,7 +22,7 @@ jobs:
         uses: astral-sh/setup-uv@v7
 
       - name: Install dependencies
-        run: uv sync
+        run: uv pip install requirements.txt
 
       - name: Install test dependencies
         run: uv pip install pytest black

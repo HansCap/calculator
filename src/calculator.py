@@ -26,9 +26,9 @@ def divide(a, b):
     return a / b
 
 
-def power(a,b):
+def power(a, b):
     """Raise a to the power of b and return the result."""
-    return a**b
+    return a ** b
 
 
 def modulo(a, b):

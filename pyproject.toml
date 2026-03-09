@@ -1,0 +1,2 @@
+[project] name = "calculator" version = "0.1.0"
+dependencies = [ # list your dependencies here ]

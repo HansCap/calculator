@@ -17,7 +17,7 @@ class TestAdd:
         assert add(2, 3) == 5
 
     def test_add_zero(self):
-        assert add(-1, 1) == 1
+        assert add(-1, 1) == 0
 
     def test_add_negative_numbers(self):
         assert add(-5, -3) == -8
@@ -61,7 +61,7 @@ class TestMultiply:
         assert multiply(-3, -4) == 12
 
     def test_multiply_by_zero(self):
-        assert multiply(0, 100) == 10
+        assert multiply(0, 100) == 0
 
     def test_multiply_floats(self):
         assert multiply(2.5, 4) == 10.0

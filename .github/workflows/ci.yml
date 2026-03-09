@@ -25,7 +25,10 @@ jobs:
         run: uv sync
 
       - name: Install test dependencies
-        run: uv add pytest
+        run: uv add pytest black
 
       - name: Run tests
         run: uv run pytest
+
+      - name: Check code formatting
+        run: uv run black --check .
